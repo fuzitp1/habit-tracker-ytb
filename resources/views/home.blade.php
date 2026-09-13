@@ -1,21 +1,9 @@
-<h1>
-    Welcome to Habit Tracker
-</h1>
-<p>
-    {{ $name }} <br>
+<x-layout>
+    <main class="py-10">
+    <h1 class="text-3xl font-bold underline text-red-500">
+        Hello world!
+    </h1>
+</main>
 
-</p>
-
-<ul>
-    @foreach($habits as $habit)
-        <li>
-            {{ $habit }}
-        </li>
-    @endforeach
-
-</ul>
-@guest
-<p>
-     você não está logado
-</p>
-@endguest
+    
+</x-layout>
