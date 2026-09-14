@@ -2,5 +2,16 @@
   <div>
     logo
 </div>  
-Este é meu cabeçalho
+
+
+@auth
+  <form action="{{ route('auth.logout') }}" method="POST">
+   @csrf
+   <button type="submit" class="bg-white border-2 rounded p-2">Sair</button>
+  </form>   
+@endauth
+
+@guest
+<a href="{{ route('site.login')}}" class="bg-white border-2 rounded p-2">Login</a>
+@endguest
 </header>

@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Http\RedirectResponse;
+
 
 class SiteController extends Controller
 {
@@ -15,5 +19,10 @@ class SiteController extends Controller
             'name' => $name,
             'habits' => $habits
         ]);
+    }
+
+    public function dashboard()
+    {
+        return view('dashboard');
     }
 }
