@@ -4,6 +4,10 @@
         Dashboard
     </h1>
 
+<p>
+    Bem vindo(a) {{ auth()->user()->name }}! Você está logado(a).
+</p>
+
     </main>   
     
 </x-layout>
